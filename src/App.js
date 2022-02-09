@@ -9,6 +9,7 @@ import Education from "./pages/Education";
 import Skills from "./pages/Skills";
 import Interests from "./pages/Interests";
 import Awards from "./pages/Awards";
+import Navbar from "./components/Navbar";
 
 import React, { Component } from "react";
 
@@ -16,6 +17,7 @@ export class App extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <Header />
         <Profile />
         <Routes>

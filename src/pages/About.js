@@ -1,10 +1,16 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default class About extends Component {
   render() {
     return (
       <div className="section">
-        <h1>Michael Garry Scott</h1>
+        <h1 className="title">Michael Garry Scott</h1>
+        <div className="about-phone-web">
+          <h3 className="about-phone">570-555-1212 </h3>
+          <h3 className="about-web">michaelscott.com</h3>
+        </div>
         <p className="p-justify">
           {" "}
           <b>
@@ -24,6 +30,16 @@ export default class About extends Component {
         <br />
         <p>“You miss 100% of the shots you don’t take. — Wayne Gretzky” </p>
         <p>— Michael Scott </p>
+
+        <div className="about-icon">
+          {" "}
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="icon-linkedin"
+            size="3x"
+          />
+          <FontAwesomeIcon icon={faGithub} className="icon-github" size="3x" />
+        </div>
       </div>
     );
   }

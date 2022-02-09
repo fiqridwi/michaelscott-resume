@@ -22,7 +22,9 @@ body {
 }
 h1 {
   font-size: 3.5rem;
+  margin-bottom: 3rem;
 }
+
 header {
   display: flex;
   flex-direction: column;
@@ -31,27 +33,37 @@ header {
 }
 .header-background {
   background-color: #272c4a;
-  height: 18rem;
+  height: 20rem;
 }
+.title {
+  font-size: 5rem;
+}
+
 nav {
-  display: flex;
-  padding: 1rem;
-  height: 5rem;
+  position: absolute;
+  width: 33rem;
+  height: 100%;
+  padding: 55rem 1rem 1rem 1rem;
   background-color: #ebebeb;
-  justify-content: center;
-  font-size: 1.6rem;
+
   font-weight: 600;
+  display: flex;
+  justify-content: center;
   text-align: center;
   align-items: center;
 }
 
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
 .nav-item {
   border: none;
   color: black;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  padding: 0.5rem 1rem;
-  display: inline-block;
+  padding: 0.5rem 2rem;
 }
 
 .nav-item:not(last-child) {
@@ -121,9 +133,35 @@ a {
 .section {
   font-size: 1.6rem;
   position: absolute;
-  top: 25rem;
-  left: 33rem;
+  top: 23rem;
+  left: 38rem;
   width: 70%;
+}
+
+.about-phone-web {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.about-phone {
+  color: rgb(90, 90, 90);
+}
+.about-web {
+  margin-left: 2rem;
+  color: #272c4a;
+}
+
+.about-icon {
+  margin-top: 3rem;
+}
+
+.icon-linkedin {
+  color: #272c4a;
+  cursor: pointer;
+}
+.icon-github {
+  color: #272c4a;
+  margin-left: 2rem;
+  cursor: pointer;
 }
 
 .experience-marbot {
@@ -132,4 +170,34 @@ a {
 
 .experience-marbot-extra {
   margin-bottom: 5rem;
+}
+
+.awards-item {
+  display: flex;
+  align-items: center;
+}
+
+.mar-left {
+  margin-left: 1.2rem;
+}
+
+.awards-item:not(last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.icon-award {
+  color: rgb(236, 203, 11);
+}
+
+.skills-item {
+  display: flex;
+  align-items: center;
+}
+
+.skills-item:not(last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.icon-check {
+  color: rgb(122, 196, 3);
 }
